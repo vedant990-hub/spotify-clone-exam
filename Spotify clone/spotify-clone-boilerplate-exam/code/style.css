@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #282828;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 15px;
+}
+
+.nav-list li a i {
+    margin-right: 10px;
+}
+
+.nav-list li a:hover {
+    background-color: #282828;
+}
+
+.music-player {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.music-player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.music-info {
+    margin-right: auto;
+}
+
+.music-title {
+    font-weight: bold;
+}
+
+.music-artist {
+    font-size: 12px;
+    color: #888;
+}
+
+.music-player i {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user span {
+    font-weight: bold;
+}
+
+.user i {
+    margin-left: 10px;
+}
+
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.playlist {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.playlist img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.playlist i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.playlist span {
+    display: block;
+    font-weight: bold;
+}
+
+.recommended {
+    margin-bottom: 20px;
+}
+
+.recommended h3 {
+    margin-bottom: 10px;
+}
+
+.recommended a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recommendation {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.recommendation img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.recommendation span {
+    display: block;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #282828;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.controls i {
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    background-color: #282828;
+    height: 5px;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.progress .current-time, .progress .duration {
+    position: absolute;
+    top: -15px;
+    font-size: 12px;
+}
+
+.progress .current-time {
+    left: 0;
+}
+
+.progress .duration {
+    right: 0;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.volume i {
+    margin-right: 5px;
+}
+
+.volume input {
+  
+    width: 100px;
+    height: 5px;
+    background-color: #282828;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume input::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
